@@ -2,7 +2,7 @@
 ### Enhance Data Security Model For Cloud Computing
 #### Group 35
 
-##Note: Checkout to Master branch for code.
+## Note: Checkout to Master branch for code.
 &nbsp;
 ##### Cloud storage is a term refers to a Cloud computing model which stores data on Internet. It is provided on demand with just-in-time capacity and costs, and also eliminates the headache of purchasing and managing your own data storage infrastructure. Having Cloud Storage is a privilege it gives you agility, global scale
 and durability & also anywhere, anytime data access. But, It raises concerns among users like: How secured the Cloud is?, Can unauthorized users gain access to their confidential data? So to eliminate these Security concerns we came up with a highly Secure & Simple to Use Cloud Storage System that has Enhanced Data Security Model to maintain data confidentiality, data integrity & data availability.
