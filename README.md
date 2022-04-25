@@ -6,7 +6,6 @@
 &nbsp;
 ##### Cloud storage is a term refers to a Cloud computing model which stores data on Internet. It is provided on demand with just-in-time capacity and costs, and also eliminates the headache of purchasing and managing your own data storage infrastructure. Having Cloud Storage is a privilege it gives you agility, global scale and durability & also anywhere, anytime data access. But, It raises concerns among users like: How secured the Cloud is?, Can unauthorized users gain access to their confidential data? So to eliminate these Security concerns we came up with a highly Secure & Simple to Use Cloud Storage System that has Enhanced Data Security Model to maintain data confidentiality, data integrity & data availability.
 &nbsp;
-&nbsp;
 ##### ABout Project:
 Designed UI based on the reviews of users. On the basis of response from the users we decided to make a
 storage system where user can easily navigate, store, share and can take backup of their data easily. Also,
