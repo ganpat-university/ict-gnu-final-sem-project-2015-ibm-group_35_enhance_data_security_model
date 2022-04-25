@@ -376,26 +376,72 @@ class _DashboardState extends State<Dashboard> {
                                                       );
                                                     },
                                                   ),
-                                                  SizedBox(
+                              SizedBox(
                                                     width: 120,
                                                   ),
                                                   IconButton(
                                                     icon: Icon(
                                                         Icons.delete_outline),
-                                                    onPressed: () async {
-                                                      final desertRef = storage
-                                                          .ref()
-                                                          .child(image['path']);
-                                                      await desertRef.delete();
-                                                      ScaffoldMessenger.of(
-                                                              context)
-                                                          .showSnackBar(
-                                                        SnackBar(
-                                                            content: Text(
-                                                                'Delete Successfully'),
-                                                            behavior:
-                                                                SnackBarBehavior
-                                                                    .floating),
+                                                    onPressed: () {
+                                                      showDialog<String>(
+                                                        context: context,
+                                                        builder: (BuildContext
+                                                        context) =>
+                                                            AlertDialog(
+                                                              title: Text(
+                                                                'Delete',
+                                                                style: TextStyle(
+                                                                    color: AppColors
+                                                                        .primaryColor),
+                                                              ),
+                                                              content: Text(
+                                                                  'Are you sure you want to delete it?'),
+                                                              actions: <Widget>[
+                                                                TextButton(
+                                                                  onPressed: () =>
+                                                                      Navigator.pop(
+                                                                          context,
+                                                                          'Cancel'),
+                                                                  child: Text(
+                                                                    'Cancel',
+                                                                    style: TextStyle(
+                                                                        color: AppColors
+                                                                            .primaryColor),
+                                                                  ),
+                                                                ),
+                                                                TextButton(
+                                                                  onPressed:
+                                                                      () async {
+                                                                    final desertRef =
+                                                                    storage
+                                                                        .ref()
+                                                                        .child(image[
+                                                                    'path']);
+                                                                    await desertRef
+                                                                        .delete();
+                                                                    ScaffoldMessenger
+                                                                        .of(context)
+                                                                        .showSnackBar(
+                                                                      SnackBar(
+                                                                          content: Text(
+                                                                              'Delete Successfully'),
+                                                                          behavior:
+                                                                          SnackBarBehavior
+                                                                              .floating),
+                                                                    );
+                                                                    Navigator.pop(
+                                                                        context,
+                                                                        'Delete');
+                                                                  },
+                                                                  child: Text(
+                                                                    'Delete',
+                                                                    style: TextStyle(
+                                                                        color: AppColors
+                                                                            .primaryColor),
+                                                                  ),
+                                                                ),
+                                                              ],
+                                                            ),
                                                       );
                                                     },
                                                   ),
